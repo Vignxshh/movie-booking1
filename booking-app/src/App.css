@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+.movie_heading{
+  height: 100px;
+  background-color:white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.movie_heading>h1{
+  padding-top: 20px;
+}
+
+
+
+
+.movie-selection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.movie-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.movie {
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.movie-poster {
+  border-radius: 20px;
+  height: 300px;
+  width: 200px;
+  transition:all 100ms;
+}
+.movie-poster:hover{
+  transform: scale(1.04);
+}
+
+.screen-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.screen-selection .screen {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgb(21, 20, 20);
+  cursor: pointer;
+  padding: 2rem;
+  transition: all 0.2s;
+}
+
+.screen-selection .screen:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 20px rgb(24, 24, 24);
+}
+
+.screen-selection .screen .selected {
+  background-color: rgb(14, 107, 247);
+  color: white;
+}
+
+.screen-selection .screen:not(.available) {
+  background-color: blanchedalmond;
+  color: gray;
+  cursor: not-allowed;
+}
+
+.screen-selection .screen-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.screen-selection .screen-time {
+  font-size: 1.2rem;
+  color: rgb(86, 84, 84);
+  margin-bottom: 1.2rem;
+}
+
+.screen-selection .screen-seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screen-selection .screen-seats .seats {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgb(32, 31, 31);
+  margin: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* 
+.screen-selection .screen-seats .seat .selected{
+  background-color: aqua;
+  color: rgb(246, 141, 4);
+} */
+
+.screen-selection .screen-seats .seats:not(.available) {
+  background-color: rgb(100, 98, 98);
+  color: white;
+  cursor: not-allowed;
+}
+
+
+.payment-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payment-button:hover {
+  transform: scale (1.05);
+  box-shadow: 0px 0xp 10px rgba(0, 0, 0, 0.2)
+}
+
+.payment-button:active {
+  opacity: 0.5;
+}
+
+.payment-button:disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
